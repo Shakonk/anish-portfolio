@@ -4,9 +4,11 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const WhatIDo = () => {
   const containerRef = useRef<(HTMLDivElement | null)[]>([]);
+
   const setRef = (el: HTMLDivElement | null, index: number) => {
     containerRef.current[index] = el;
   };
+
   useEffect(() => {
     if (ScrollTrigger.isTouch) {
       containerRef.current.forEach((container) => {
@@ -16,6 +18,7 @@ const WhatIDo = () => {
         }
       });
     }
+
     return () => {
       containerRef.current.forEach((container) => {
         if (container) {
@@ -24,6 +27,7 @@ const WhatIDo = () => {
       });
     };
   }, []);
+
   return (
     <div className="whatIDO">
       <div className="what-box">
@@ -34,6 +38,7 @@ const WhatIDo = () => {
           </div>
         </h2>
       </div>
+
       <div className="what-box">
         <div className="what-box-in">
           <div className="what-border2">
@@ -58,6 +63,8 @@ const WhatIDo = () => {
               />
             </svg>
           </div>
+
+          {/* FULL STACK */}
           <div
             className="what-content what-noTouch"
             ref={(el) => setRef(el, 0)}
@@ -84,27 +91,34 @@ const WhatIDo = () => {
                 />
               </svg>
             </div>
+
             <div className="what-corner"></div>
 
             <div className="what-content-in">
-              <h3>AI & AUTOMATION</h3>
-              <h4>Workflow Intelligence for Organizations</h4>
+              <h3>FULL STACK DEVELOPMENT</h3>
+              <h4>Building Scalable Web Applications</h4>
               <p>
-                AI specialist helping organizations automate workflows—internal ops
-                and customer-facing—so teams ship faster with less manual work.
+                I develop full-stack web applications using modern technologies
+                like React.js, Node.js, and Express.js. I focus on creating
+                responsive, user-friendly interfaces and efficient backend
+                systems.
               </p>
+
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
-                <div className="what-tags">LLMs &amp; agents</div>
-                <div className="what-tags">Workflow design</div>
-                <div className="what-tags">RAG &amp; retrieval</div>
-                <div className="what-tags">Evals &amp; guardrails</div>
-                <div className="what-tags">Integrations</div>
-                <div className="what-tags">Product strategy</div>
+                <div className="what-tags">React.js</div>
+                <div className="what-tags">Node.js</div>
+                <div className="what-tags">Express.js</div>
+                <div className="what-tags">JavaScript</div>
+                <div className="what-tags">Tailwind CSS</div>
+                <div className="what-tags">REST APIs</div>
               </div>
+
               <div className="what-arrow"></div>
             </div>
           </div>
+
+          {/* AI PROJECTS */}
           <div
             className="what-content what-noTouch"
             ref={(el) => setRef(el, 1)}
@@ -122,24 +136,28 @@ const WhatIDo = () => {
                 />
               </svg>
             </div>
+
             <div className="what-corner"></div>
+
             <div className="what-content-in">
-              <h3>BUILD &amp; SCALE</h3>
-              <h4>Shipping AI in Production</h4>
+              <h3>AI APPLICATIONS</h3>
+              <h4>Building Intelligent Web Solutions</h4>
               <p>
-                I build the systems behind it: APIs, data, voice/real-time, and
-                full-stack products—production-ready, not slide decks.
+                I build AI-powered applications by integrating APIs like Gemini
+                to create intelligent systems such as chatbots and real-time
+                applications with dynamic responses.
               </p>
+
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
-                <div className="what-tags">Node.js</div>
-                <div className="what-tags">Python</div>
-                <div className="what-tags">REST &amp; real-time APIs</div>
-                <div className="what-tags">PostgreSQL</div>
-                <div className="what-tags">MongoDB</div>
-                <div className="what-tags">React</div>
-                <div className="what-tags">Cloud &amp; infra</div>
+                <div className="what-tags">Gemini API</div>
+                <div className="what-tags">AI Chatbot</div>
+                <div className="what-tags">API Integration</div>
+                <div className="what-tags">Real-time Systems</div>
+                <div className="what-tags">Frontend + Backend</div>
+                <div className="what-tags">Problem Solving</div>
               </div>
+
               <div className="what-arrow"></div>
             </div>
           </div>
@@ -154,6 +172,7 @@ export default WhatIDo;
 function handleClick(container: HTMLDivElement) {
   container.classList.toggle("what-content-active");
   container.classList.remove("what-sibling");
+
   if (container.parentElement) {
     const siblings = Array.from(container.parentElement.children);
 

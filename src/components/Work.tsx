@@ -5,33 +5,37 @@ import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
 const projects = [
   {
-    title: "CallHQ",
-    category: "Voice AI Calling Platform",
-    tools: "Voice AI, Calling Automation, CRM Integrations",
-    image: "/images/callhq.png",
-    link: "https://callhq.ai",
+    title: "AI ChatBot",
+    category: "AI-Powered Web Application",
+    tools:
+      "React.js, Node.js, Express.js, Gemini API, Tailwind CSS",
+    image: "/images/AI-Chatbot.jpeg",
+    link: "https://github.com/Shakonk/ai-chatbot", // replace with actual repo if available
   },
   {
-    title: "Whatsapp Automation",
-    category: "WABA Application",
-    tools: "WhatsApp Business API, Workflow Automation, Notifications",
-    image: "/images/whatsapp.png",
-    link: "https://whatsapp.callhq.ai",
+    title: "ActionHub",
+    category: "Task Management System",
+    tools:
+      "React.js, JavaScript, Local Storage, Responsive UI",
+    image: "/images/ActionHub.jpeg",
+    link: "https://github.com/Shakonk/Actionhub-task-management", // replace with actual repo
   },
   {
-    title: "Broki",
-    category: "Real Estate Platform for FnB Industry",
-    tools: "Property Discovery, Lead Management, Marketplace Workflows",
-    image: "/images/broki.png",
-    link: "https://broki.in",
+    title: "Full Stack Auth System",
+    category: "URL Shortener with Real-Time Analytics",
+    tools:
+      "Node.js, Express.js, MongoDB, JWT Authentication",
+    image: "/images/Url-Shortener.jpeg",
+    link: "https://github.com/Shakonk/shortify",
   },
   {
-    title: "Orrdr.com",
-    category: "Ecommerce Platform and Mobile App",
-    tools: "Ecommerce, Mobile Experience, Order Management",
-    image: "/images/orrdr.png",
-    link: "https://orrdr.com",
-  },
+  title: "Garden City Game",
+  category: "Interactive Web Game",
+  tools:
+    "React.js, JavaScript, Game Logic, UI Design",
+  image: "/images/garden-city.jpeg",
+  link: "https://v0-garden-city-game-beryl.vercel.app/",
+},
 ];
 
 const Work = () => {
@@ -68,7 +72,7 @@ const Work = () => {
         </h2>
 
         <div className="carousel-wrapper">
-          {/* Navigation Arrows */}
+          {/* Navigation */}
           <button
             className="carousel-arrow carousel-arrow-left"
             onClick={goToPrev}
@@ -77,6 +81,7 @@ const Work = () => {
           >
             <MdArrowBack />
           </button>
+
           <button
             className="carousel-arrow carousel-arrow-right"
             onClick={goToNext}
@@ -101,17 +106,22 @@ const Work = () => {
                       <div className="carousel-number">
                         <h3>0{index + 1}</h3>
                       </div>
+
                       <div className="carousel-details">
                         <h4>{project.title}</h4>
                         <p className="carousel-category">
                           {project.category}
                         </p>
+
                         <div className="carousel-tools">
-                          <span className="tools-label">Tools & Features</span>
+                          <span className="tools-label">
+                            Tech Stack
+                          </span>
                           <p>{project.tools}</p>
                         </div>
                       </div>
                     </div>
+
                     <div className="carousel-image-wrapper">
                       <WorkImage
                         image={project.image}
@@ -125,13 +135,16 @@ const Work = () => {
             </div>
           </div>
 
-          {/* Dot Indicators */}
+          {/* Dots */}
           <div className="carousel-dots">
             {projects.map((_, index) => (
               <button
                 key={index}
-                className={`carousel-dot ${index === currentIndex ? "carousel-dot-active" : ""
-                  }`}
+                className={`carousel-dot ${
+                  index === currentIndex
+                    ? "carousel-dot-active"
+                    : ""
+                }`}
                 onClick={() => goToSlide(index)}
                 aria-label={`Go to project ${index + 1}`}
                 data-cursor="disable"

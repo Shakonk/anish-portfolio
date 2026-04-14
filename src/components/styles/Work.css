@@ -13,7 +13,7 @@
   margin-bottom: 50px;
 }
 
-.work-section h2>span {
+.work-section h2 > span {
   color: var(--accentColor);
 }
 
@@ -32,26 +32,35 @@
   width: 100%;
   border-top: 1px solid #363636;
   border-bottom: 1px solid #363636;
+  position: relative;
 }
 
 .carousel-track {
   display: flex;
-  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+  transition: transform 0.6s cubic-bezier(0.65, 0, 0.35, 1);
   will-change: transform;
 }
 
+/* ✅ FIXED SLIDE */
 .carousel-slide {
   min-width: 100%;
+  width: 100%;
   flex-shrink: 0;
   box-sizing: border-box;
   padding: 50px 0;
+  display: flex;
+  justify-content: center;
 }
 
+/* ✅ FIXED CONTENT */
 .carousel-content {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 60px;
   width: 100%;
+  max-width: 1200px;
 }
 
 .carousel-info {
@@ -107,11 +116,14 @@
   font-size: 15px;
 }
 
+/* ✅ FIXED IMAGE WRAPPER */
 .carousel-image-wrapper {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 500px;
+  overflow: hidden;
 }
 
 /* ── Navigation Arrows ── */
@@ -180,7 +192,7 @@
   box-shadow: 0 0 8px rgba(94, 234, 212, 0.4);
 }
 
-/* ── Work Image (reused) ── */
+/* ── Work Image ── */
 .work-image {
   display: flex;
   width: 100%;
@@ -227,23 +239,16 @@
   object-fit: cover;
 }
 
+/* ✅ FIXED IMAGE */
 .work-image img {
-  max-width: 100%;
+  width: 100%;
+  height: auto;
   max-height: 400px;
+  object-fit: contain;
   border-radius: 8px;
 }
 
 /* ── Responsive ── */
-@media only screen and (max-width: 1600px) {
-  .carousel-arrow-left {
-    left: -60px;
-  }
-
-  .carousel-arrow-right {
-    right: -60px;
-  }
-}
-
 @media only screen and (max-width: 1400px) {
   .work-section h2 {
     font-size: 50px;
@@ -288,14 +293,6 @@
     width: 40px;
     height: 40px;
     font-size: 18px;
-  }
-
-  .carousel-arrow-left {
-    left: 10px;
-  }
-
-  .carousel-arrow-right {
-    right: 10px;
   }
 }
 
