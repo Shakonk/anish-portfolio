@@ -12,7 +12,7 @@ This repository contains the source code for my personal **3D developer portfoli
 
 ## 📸 Portfolio Preview
 
-![Portfolio Preview](public/images/preview1.png)
+![Portfolio Preview](public/images/preview1.jpeg)
 
 ---
 
