@@ -1,57 +1,85 @@
-# 3D Portfolio Website
+# 🚀 3D Portfolio Website – Anish Pandkar
 
-This repository contains the source code for a personal 3D portfolio built with React, TypeScript, Three.js, React Three Fiber, and GSAP. It includes animated page sections, a character scene, custom cursor interactions, and smooth transitions designed for a modern portfolio experience.
+This repository contains the source code for my personal **3D developer portfolio** built with React, TypeScript, Three.js, React Three Fiber, and GSAP. It features interactive animations, a 3D character scene, and smooth transitions for a modern portfolio experience.
 
-Live site: [https://akashrmalhotra.netlify.app/](https://akashrmalhotra.netlify.app/)
+---
+
+## 🌐 Live Site
+
+👉 https://your-vercel-link.vercel.app/
+
+---
+
+## 📸 Portfolio Preview
 
 ![Portfolio Preview](public/images/preview1.png)
 
-## Table of Contents
+---
 
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Project Structure](#project-structure)
-- [Getting Started](#getting-started)
-- [Available Scripts](#available-scripts)
-- [GSAP License Note](#gsap-license-note)
-- [Customization Guide](#customization-guide)
-- [Troubleshooting](#troubleshooting)
-- [Deployment](#deployment)
-- [License](#license)
+## 🧑‍💻 About Me
 
-## Features
+Hi, I'm **Anish Pandkar** 👋  
+A passionate **Full Stack Developer & AI Enthusiast** focused on building scalable web applications and interactive UI experiences.
 
-- Responsive one-page portfolio layout with reusable section components.
-- 3D character scene rendering powered by React Three Fiber and Three.js.
-- GSAP-powered animations and transitions for interactive storytelling.
-- Custom cursor, hover interactions, and scroll-driven visual effects.
-- Organized component architecture with dedicated utilities and style modules.
+- 💻 MERN Stack Developer  
+- 🤖 AI & Automation Enthusiast  
+- 🚀 Building real-world projects  
+- 📍 India  
 
-## Tech Stack
+---
+
+## ✨ Features
+
+- Responsive one-page portfolio layout  
+- 3D character scene using React Three Fiber  
+- Smooth animations using GSAP  
+- Custom cursor & scroll interactions  
+- Clean and modular component structure  
+
+---
+
+## 🛠️ Tech Stack
 
 ### Core
+- React 18  
+- TypeScript  
+- Vite  
 
-- React 18
-- TypeScript
-- Vite
+### Animation & 3D
+- GSAP  
+- Three.js  
+- @react-three/fiber  
+- @react-three/drei  
 
-### Animation and 3D
+### Backend & Tools
+- Node.js  
+- Express.js  
+- MongoDB  
 
-- GSAP + `@gsap/react`
-- Three.js
-- `@react-three/fiber`
-- `@react-three/drei`
-- `@react-three/postprocessing`
-- `@react-three/cannon`
-- `@react-three/rapier`
+---
 
-### Supporting Libraries
+## 🚀 Featured Projects
 
-- `react-icons`
-- `react-fast-marquee`
-- `@vercel/analytics`
+### 🤖 AI ChatBot  
+AI-powered chatbot using Gemini API  
+👉 https://github.com/Shakonk/ai-chatbot  
 
-## Project Structure
+### 📋 ActionHub  
+Task management system  
+👉 https://github.com/Shakonk/Actionhub-task-management  
+
+### 🔗 URL Shortener  
+Full-stack app with authentication  
+👉 https://github.com/Shakonk/shortify  
+
+### 🎮 Garden City Game  
+Interactive browser game  
+👉 Live: https://v0-garden-city-game-beryl.vercel.app/  
+👉 GitHub: https://github.com/Shakonk/garden-city-game  
+
+---
+
+## 📁 Project Structure
 
 ```text
 .
@@ -59,118 +87,77 @@ Live site: [https://akashrmalhotra.netlify.app/](https://akashrmalhotra.netlify.
 ├── src/
 │   ├── assets/                # Local media/assets
 │   ├── components/
-│   │   ├── Character/         # 3D scene + character logic/utilities
-│   │   ├── styles/            # Section/component CSS files
+│   │   ├── Character/         # 3D scene logic
+│   │   ├── styles/            # CSS files
 │   │   ├── About.tsx
 │   │   ├── Career.tsx
 │   │   ├── Contact.tsx
 │   │   ├── Landing.tsx
-│   │   ├── MainContainer.tsx  # Main page composition
 │   │   ├── Navbar.tsx
-│   │   ├── TechStack.tsx
 │   │   ├── WhatIDo.tsx
 │   │   └── Work.tsx
-│   ├── context/               # Global providers (loading state, etc.)
-│   ├── data/                  # Static data/content definitions
+│   ├── context/
+│   ├── data/
 │   ├── App.tsx
 │   └── main.tsx
 ├── package.json
 └── vite.config.ts
-```
 
-## Getting Started
+⚙️ Getting Started
+Prerequisites
+Node.js 18+
+npm 9+
+Installation
+git clone https://github.com/Shakonk/anish-portfolio.git
+cd anish-portfolio
+npm install
+npm run dev
 
-### Prerequisites
+Open: http://localhost:5173
 
-- Node.js 18+ (recommended)
-- npm 9+ (or compatible)
+📜 Available Scripts
+npm run dev → Start development server
+npm run build → Build for production
+npm run preview → Preview production build
+npm run lint → Run ESLint
+🎨 Customization
+Edit content → src/components/
+Update data → src/data/
+Modify styles → src/components/styles/
+Adjust 3D → src/components/Character/
+⚠️ Troubleshooting
+Blank screen → Check console errors
+Performance issues → Reduce 3D complexity
+Build errors → Run npm run build
+🚀 Deployment
+npm run build
+npm run preview
 
-### Installation
+Deploy using:
 
-1. Clone the repository:
+Vercel
+Netlify
+Cloudflare Pages
+📬 Connect With Me
+💼 LinkedIn: https://www.linkedin.com/in/anish-pandkar-9201a2301/
+💻 GitHub: https://github.com/Shakonk
+⭐ Support
 
-   ```bash
-   git clone <your-repository-url>
-   cd 3d-portfolio
-   ```
+If you like this project, give it a ⭐ on GitHub!
 
-2. Install dependencies:
+📄 License
 
-   ```bash
-   npm install
-   ```
+MIT License
 
-3. Start the local development server:
 
-   ```bash
-   npm run dev
-   ```
+---
 
-4. Open the URL shown in the terminal (typically `http://localhost:5173`).
+# 🔥 FINAL STEP (VERY IMPORTANT)
 
-## Available Scripts
+After deploying on :contentReference[oaicite:0]{index=0}  
 
-- `npm run dev`  
-  Starts Vite dev server and exposes host for local network testing.
+👉 Replace:
+```md
+https://your-vercel-link.vercel.app/
 
-- `npm run build`  
-  Type-checks and builds a production-ready bundle.
-
-- `npm run preview`  
-  Serves the production build locally for verification.
-
-- `npm run lint`  
-  Runs ESLint checks across the project.
-
-## GSAP License Note
-
-This project uses the standard `gsap` package, including bonus plugins now available in the core package.
-
-- Install dependencies with `npm install`.
-- If migrating from older setups, remove `gsap-trial` from your project.
-
-Read official installation guidance here: [GSAP Installation Docs](https://gsap.com/docs/v3/Installation/)
-
-## Customization Guide
-
-You can adapt this portfolio to your own profile by updating the following areas:
-
-- **Content sections**: Edit files in `src/components/` such as `About.tsx`, `Career.tsx`, `WhatIDo.tsx`, and `Work.tsx`.
-- **Data source**: Update static values in files under `src/data/`.
-- **Styling**: Modify component styles in `src/components/styles/` and global styles in `src/index.css` / `src/App.css`.
-- **3D scene behavior**: Adjust scene logic in `src/components/Character/` and related utilities.
-- **Animations**: Tweak GSAP utilities under `src/components/utils/`.
-
-## Troubleshooting
-
-- **Blank screen in development**  
-  Check browser console for module import errors and verify all dependencies are installed.
-
-- **3D performance issues on low-end devices**  
-  Reduce scene complexity and post-processing effects in the character/scene utilities.
-
-- **GSAP plugin errors**  
-  Ensure you have the correct plugin package and license configuration for your target environment.
-
-- **TypeScript build failures**  
-  Run `npm run build` and address reported type errors before deploying.
-
-## Deployment
-
-1. Create a production build:
-
-   ```bash
-   npm run build
-   ```
-
-2. Validate locally:
-
-   ```bash
-   npm run preview
-   ```
-
-3. Deploy the generated `dist/` folder to your hosting provider (for example Vercel, Netlify, or Cloudflare Pages).
-
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
+with your real live URL
